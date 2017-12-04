@@ -6,6 +6,7 @@
 body {}
 
 .top {
+    /**/
     width: 100%;
     /*画面の横の長さ*/
     height: 195px;
@@ -120,6 +121,7 @@ h2 {
     color: white;
     transition: 0.5s;
     margin-right: 20px;
+    margin-left: 15px;
 }
 
 h3 {
@@ -145,13 +147,21 @@ h6 {
 }
 
 .title{
+    margin: 200px auto 0;
     height: 120px;
-    width: 470px;
-    margin: 0 auto;
+    width: 520px;
+    opacity: 1;
+    transition: 0.5s;
 }
 
-.icon{
-    float: left;   
+.icon {
+    float: left;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.left-icon {
+    margin-left: 20px;
 }
 
 .block {
@@ -196,14 +206,39 @@ h6 {
     /*処理の速さを遅くする。*/
 }
 
+.blocks:hover>.block:hover {
+    width: 95%;
+    /*カーソルを置いた方のブロックを画面に反映させる。*/
+    transition: 0.5s;
+    /*処理の速さを遅くする。*/
+}
+
 .blocks:hover>.block:hover .content {
     opacity: 1;
     transition: 0.5s;
 }
 
-.blocks:hover>.block:hover .title {
+.blocks:hover>.left:hover .title {
+    height: 120px;
+    width: 520px;
+    margin-left: 30%;
+    transition: 0.5s;
     margin-top: 35px;
     transition: 0.5s;
+}
+
+.blocks:hover>.right:hover .title {
+    height: 120px;
+    width: 520px;
+    margin-left: 32%;
+    transition: 0.5s;
+    margin-top: 35px;
+    transition: 0.5s;
+}
+
+.blocks:hover>.block:hover .title .icon {
+    opacity: 1;
+    transition: 2.5s;
 }
 
 .left {
