@@ -199,7 +199,6 @@ h6 {
 
 .blocks:hover>.block:hover h2 {
     opacity: 1;
-    text-decoration: underline;
     transition: 0.5s;
 }
 
