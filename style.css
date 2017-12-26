@@ -6,7 +6,7 @@
 body {}
 
 .top {
-    /**/
+    /*一番上のタイトル*/
     width: 100%;
     /*画面の横の長さ*/
     height: 195px;
@@ -16,45 +16,47 @@ body {}
 }
 
 .link {
-    transition: 0.5s;
-    font-size: 40px;
-    text-decoration: none;
+　　/*トップに表示されるリンクボタンの大まかなレイアウト*/
+    width: 20%;
+    color: white;
     background: none;
     border: 1px solid white;
     border-radius: 2px;
-    color: white;
+    font-size: 40px;
+    text-decoration: none;
     float: left;
-    width: 170px;
+    transition: 0.5s;
+    padding: 30px 70px;
 }
 
 .link:hover {
-    background: white;
+    /*リンクボタンにカーソルを置いた時の変化*/
     color: #FFC881;
+    background: white;
 }
 
 .links {
-    width:80%;
-    position: absolute;
+    /*.linkを囲っているdiv*/
+    width:80%;/*divの大きさ*/
     top: 50%;
     left: 50%;
+    margin-left: 30px;
+    position: absolute;
     transform: translate(-50%,-50%);
-    opacity: 0;
+    opacity: 0;/*divの透明度で、基本は透明。*/
 }
 
 .youtube {
-    padding: 30px 70px;
     text-align: center;
 }
 
 .twitter {
-    padding: 30px 70px;
-    margin-left: 30px;
+    margin-left: 5%;
     text-align: center;
 }
 
 .facebook {
-    padding: 30px 70px;
-    margin-left: 30px;
+    margin-left: 5%;
     text-align: center;
 }
 
@@ -104,6 +106,8 @@ body {}
 p {
     margin: 10px 0px;
     font-size: 30px;
+    text-align: left;
+    margin-left: 330px;
 }
 
 h1 {
