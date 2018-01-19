@@ -87,6 +87,12 @@ body {}
     transition: 0.5s;
 }
 
+.live-date{
+    width:580px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .live:hover {
     font-size: 27px;
     transition: 0.5s;
